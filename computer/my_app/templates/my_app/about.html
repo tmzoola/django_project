@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<h1>This is about page</h1>
+
+<ul>
+    <li>{{value.id}}</li>
+    <li>{{value.surname}}</li>
+    <li>{{value.age}}</li>
+    <li>{{value.profession}}</li>
+</ul>
+
+<p>{{value.about}}</p>
+{% endblock content %}

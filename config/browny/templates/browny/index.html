@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    
+ {% include "navbar.html" %}
+    <!-- top-area End -->
+
+    <!--welcome-hero start -->
+{% include "skills.html" %}
+    
+  
+
+{% include "education.html" %}
+
+
+{% include "experience.html" %}
+
+{% include "profiles.html" %}
+
+
+
+   
+    <!--portfolio start -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-details">
+            <div class="section-heading text-center">
+                <h2>portfolio</h2>
+            </div>
+            <div class="container">
+                <div class="portfolio-content">
+                    <div class="isotope">
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                
+                                {% for image in images %}
+                                <div class="item">
+                                
+                                    <img src="{% static '{{image.img_name}}' %}" alt="portfolioimage"/>
+                                    <div class="isotope-overlay">
+                                        <a href="#">
+                                            ui/ux design
+                                        </a>
+                                    </div><!-- /.isotope-overlay -->
+                                </div><!-- /.item -->
+                                {% endfor %}
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!--/.isotope-->
+                </div><!--/.gallery-content-->
+            </div><!--/.container-->
+        </div><!--/.portfolio-details-->
+
+    </section><!--/.portfolio-->
+    <!--portfolio end -->
+
+
+    {% include "clients.html" %}
+
+  {% include "contact.html" %}
+    
+    
+
+
+{% endblock content %}

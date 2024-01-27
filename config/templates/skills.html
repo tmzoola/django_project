@@ -1,0 +1,97 @@
+{% load static %}
+<section id="welcome-hero" class="welcome-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="header-text">
+                    <h2>hi <span>,</span> i am <br> browny <br> star <span>.</span>   </h2>
+                    <p>ui/ux designer and web developer</p>
+                    <a href="assets/download/browney.txt" download>download resume</a>
+                </div><!--/.header-text-->
+            </div><!--/.col-->
+        </div><!-- /.row-->
+    </div><!-- /.container-->
+
+</section><!--/.welcome-hero-->
+<!--welcome-hero end -->
+
+<!--about start -->
+<section id="about" class="about">
+    <div class="section-heading text-center">
+        <h2>{{about.title}}</h2>
+    </div>
+    <div class="container">
+        <div class="about-content">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-about-txt">
+                        <p>
+                           {{about.description}}
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-about-add-info">
+                                    <h3>phone</h3>
+                                    <p>987-123-6547</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-about-add-info">
+                                    <h3>email</h3>
+                                    <p>browny@info.com</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-about-add-info">
+                                    <h3>website</h3>
+                                    <p>www.brownsine.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-5">
+                    <div class="single-about-img">
+                        <img src="{% static "browny/assets/images/about/profile_image.jpg" %}" alt="profile_image">
+                        <div class="about-list-icon">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i  class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li><!-- / li -->
+                                <li>
+                                    <a href="#">
+                                        <i  class="fa fa-dribbble" aria-hidden="true"></i>
+                                    </a>
+                                    
+                                </li><!-- / li -->
+                                <li>
+                                    <a href="#">
+                                        <i  class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    
+                                </li><!-- / li -->
+                                <li>
+                                    <a href="#">
+                                        <i  class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li><!-- / li -->
+                                <li>
+                                    <a href="#">
+                                        <i  class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li><!-- / li -->
+                                
+                                
+                            </ul><!-- / ul -->
+                        </div><!-- /.about-list-icon -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/.about-->
+<!--about end -->
